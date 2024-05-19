@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsung</title>
+    <link rel="stylesheet" href="samsung.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="mofo.png">
+</head>
+<body>
+    <div class="nav">
+        <div class="logo"> <a href="/home.html"><img src="mofo.png" height="70px"></a> </div>
+
+        <div class="sam">Samsung</div>
+    </div>
+
+
+    <div class="both">
+
+        <div class="sel">
+                <a href="samsung.html" class="all" id="all">All</a>
+                <a href="gs.html" class="gs" id="gs">Galaxy S</a>
+                <a href="gz.html" class="gz" id="gz">Galaxy Z</a>
+                <a href="ga.html" class="ga" id="ga">Galaxy A</a>
+                <a href="gm.html" class="gm" id="gm">Galaxy M</a>
+                <button onclick="changeIframeSrc('https:/ga.html')">Load Example 1</button>
+        </div>
+    
+    <iframe id="change" src="ga.html" frameborder="0" scrolling="no" height="980" width="1300"></iframe>
+    
+
+    </div>
+
+    <script>
+        function changeIframeSrc(url) {
+            // Get the iframe element
+            var iframe = document.getElementById('myIframe');
+            // Set the src attribute of the iframe to the new URL
+            iframe.src = url;
+        }
+        </script>
+
+</body>
+</html>
+
